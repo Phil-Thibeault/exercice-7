@@ -47,13 +47,23 @@
     color: #02C3BD;
 }
 
+.entry-content{
+    font-size: 2em;
+}
+
 .site-content{
     margin-top: 25vh;
     background-color: #FFF;
 }
 
+.galerie li{
+    transform: skew(0deg);
+    transition: transform 1s;
+}
+
 .galerie li:hover{
     transform: skew(5deg);
+    transition: transform 1s;
 }
 
 .site-footer{
