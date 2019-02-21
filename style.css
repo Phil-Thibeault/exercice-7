@@ -52,6 +52,10 @@
     background-color: #FFF;
 }
 
+.galerie li:hover{
+    transform: skew(5deg);
+}
+
 .site-footer{
     background-color: #FFF;
 }
