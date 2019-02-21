@@ -12,16 +12,46 @@
  Text Domain:  twenty-nineteen-enfant
 */
 
+.site-header{
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 25vh;
+    z-index: -99;
+}
+
 .site-branding{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #03312E;
+    height: 20vh;
 }
 
 .site-branding .site-description {
-	background-color: gold;
+	color: #009F93;
 }
 
 .site-branding > .site-title{
-    background-color: goldenrod;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+}
+
+.site-branding > .site-title > a {
+    color: #02C3BD;
+}
+
+.site-content{
+    margin-top: 25vh;
+    background-color: #FFF;
+}
+
+.site-footer{
+    background-color: #FFF;
 }
