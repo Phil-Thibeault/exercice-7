@@ -1,0 +1,288 @@
+/*
+ Theme Name:   Twenty Nineteen Enfant
+ Theme URI:    http://referenced.ca/
+ Description:  Twenty Nineteen Enfant
+ Author:       Phil Thibeault
+ Author URI:   http://referenced.ca
+ Template:     twentynineteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-nineteen-enfant
+*/
+
+@import "./sass/mixins/utilities";
+@import "./sass/variables-site/variables-site";
+
+@include media(mobile) {
+    .site-header{
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 25vh;
+        z-index: -99;
+    
+        .site-branding{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            background-image: url("header.jpg");
+            background-size: cover;
+            height: 100vh;
+    
+            .site-description {
+                color: #000;
+                transform: translateY(-100vh) rotate(0deg);
+                transform-origin: 0 50%;
+                animation: dropIn 3s;
+                animation-fill-mode: forwards;
+            }
+    
+            .site-title{
+                width: 100%;
+                text-align: center;
+                font-size: 2em;
+                margin: 0 0 5px 0;
+    
+                a {
+                    padding: 5px;
+                    color: #000;
+                    background-color: #FFF;
+                    animation: changerCouleurs 2s;
+                    animation-iteration-count: infinite;
+                }
+            }
+        }
+    }
+    
+    .site-content{
+        margin-top: 100vh;
+        background-color: #FFF;
+    
+        .entry-content{
+            font-size: 2em;
+    
+            .galerie{
+                li{
+                    transform: skew(0deg);
+                    transition: transform 1s;
+    
+                    &:hover{
+                        transform: skew(5deg);
+                        transition: transform 1s;
+                    }
+                }
+            }
+        }
+    }
+    
+    .site-footer{
+        background-color: #FFF;
+    }
+}
+
+@include media(tablet) {
+    .site-header{
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 25vh;
+        z-index: -99;
+    
+        .site-branding{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            background-image: url("header.jpg");
+            background-size: cover;
+            height: 100vh;
+    
+            .site-description {
+                color: #000;
+                transform: translateY(-100vh) rotate(0deg);
+                transform-origin: 0 50%;
+                animation: dropIn 3s;
+                animation-fill-mode: forwards;
+            }
+    
+            .site-title{
+                width: 100%;
+                text-align: center;
+                font-size: 2em;
+                margin: 0 0 5px 0;
+    
+                a {
+                    padding: 5px;
+                    color: #000;
+                    background-color: #FFF;
+                    animation: changerCouleurs 2s;
+                    animation-iteration-count: infinite;
+                }
+            }
+        }
+    }
+    
+    .site-content{
+        margin-top: 100vh;
+        background-color: #FFF;
+    
+        .entry-content{
+            font-size: 2em;
+    
+            .galerie{
+                li{
+                    transform: skew(0deg);
+                    transition: transform 1s;
+    
+                    &:hover{
+                        transform: skew(5deg);
+                        transition: transform 1s;
+                    }
+                }
+            }
+        }
+    }
+    
+    .site-footer{
+        background-color: #FFF;
+    }
+}
+
+@include media(desktop) {
+    .site-header{
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 25vh;
+        z-index: -99;
+    
+        .site-branding{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            background-image: url("header.jpg");
+            background-size: cover;
+            height: 100vh;
+    
+            .site-description {
+                color: #000;
+                transform: translateY(-100vh) rotate(0deg);
+                transform-origin: 0 50%;
+                animation: dropIn 3s;
+                animation-fill-mode: forwards;
+            }
+    
+            .site-title{
+                width: 100%;
+                text-align: center;
+                font-size: 2em;
+                margin: 0 0 5px 0;
+    
+                a {
+                    padding: 5px;
+                    color: #000;
+                    background-color: #FFF;
+                    animation: changerCouleurs 2s;
+                    animation-iteration-count: infinite;
+                }
+            }
+        }
+    }
+    
+    .site-content{
+        margin-top: 100vh;
+        background-color: #FFF;
+    
+        .entry-content{
+            font-size: 2em;
+    
+            .galerie{
+                li{
+                    transform: skew(0deg);
+                    transition: transform 1s;
+    
+                    &:hover{
+                        transform: skew(5deg);
+                        transition: transform 1s;
+                    }
+                }
+            }
+        }
+    }
+    
+    .site-footer{
+        background-color: #FFF;
+    }
+}
+
+@keyframes changerCouleurs {
+    from {
+        color: #000;
+        background-color: #FFF;
+    }
+  
+    25% {
+        color: #1cc1ef;
+        background-color: #cc181b;
+    }
+
+    50% {
+        color: #FFF;
+        background-color: #000;
+    }
+
+    75% {
+        color: #cc181b;
+        background-color: #1cc1ef;
+    }
+
+    to {
+    color: #000;
+    background-color: #FFF;
+    }
+}
+
+@keyframes dropIn {
+    from {
+        transform: translateY(-100vh) rotate(0deg);
+        animation-timing-function: ease-in;
+    }
+  
+    15% {
+        transform: translateY(0vh) rotate(0deg);
+        animation-timing-function: ease-out;
+    }
+
+    35% {
+        transform: translateY(0vh) rotate(160deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    55% {
+        transform: translateY(0vh) rotate(10deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    75% {
+        transform: translateY(0vh) rotate(160deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    to {
+        transform: translateY(0vh) rotate(10deg);
+        animation-timing-function: ease-in-out;
+    }
+}
