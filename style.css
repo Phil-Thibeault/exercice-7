@@ -276,22 +276,32 @@
   from {
     color: #000;
     background-color: #FFF;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
   25% {
-    color: #1cc1ef;
-    background-color: #cc181b;
+    color: #B52BE3;
+    background-color: #FD0133;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
   50% {
     color: #FFF;
     background-color: #000;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
   75% {
-    color: #cc181b;
-    background-color: #1cc1ef;
+    color: #FD0133;
+    background-color: #B52BE3;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
   to {
     color: #000;
     background-color: #FFF;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
 }
 
@@ -299,22 +309,32 @@
   from {
     color: #000;
     background-color: #FFF;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
   25% {
-    color: #1cc1ef;
-    background-color: #cc181b;
+    color: #B52BE3;
+    background-color: #FD0133;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
   50% {
     color: #FFF;
     background-color: #000;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
   75% {
-    color: #cc181b;
-    background-color: #1cc1ef;
+    color: #FD0133;
+    background-color: #B52BE3;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
   to {
     color: #000;
     background-color: #FFF;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
 }
 

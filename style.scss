@@ -232,26 +232,31 @@
     from {
         color: #000;
         background-color: #FFF;
+        animation-timing-function: ease-out;
     }
   
     25% {
-        color: #1cc1ef;
-        background-color: #cc181b;
+        color: #B52BE3;
+        background-color: #FD0133;
+        animation-timing-function: ease-out;
     }
 
     50% {
         color: #FFF;
         background-color: #000;
+        animation-timing-function: ease-out;
     }
 
     75% {
-        color: #cc181b;
-        background-color: #1cc1ef;
+        color: #FD0133;
+        background-color: #B52BE3;
+        animation-timing-function: ease-out;
     }
 
     to {
     color: #000;
     background-color: #FFF;
+    animation-timing-function: ease-out;
     }
 }
 
