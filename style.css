@@ -224,8 +224,8 @@
             transform: translateY(-100vh) rotate(0deg);
     -webkit-transform-origin: 0 50%;
             transform-origin: 0 50%;
-    -webkit-animation: dropIn 3s;
-            animation: dropIn 3s;
+    -webkit-animation: dropIn 1s ease-in 0s forwards, swing 3s ease-in 1s infinite forwards;
+            animation: dropIn 1s ease-in 0s forwards, swing 3s ease-in 1s infinite forwards;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
@@ -325,33 +325,15 @@
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
   }
-  15% {
+  30% {
     -webkit-transform: translateY(0vh) rotate(0deg);
             transform: translateY(0vh) rotate(0deg);
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
   }
-  35% {
+  100% {
     -webkit-transform: translateY(0vh) rotate(160deg);
             transform: translateY(0vh) rotate(160deg);
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-  }
-  55% {
-    -webkit-transform: translateY(0vh) rotate(10deg);
-            transform: translateY(0vh) rotate(10deg);
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-  }
-  75% {
-    -webkit-transform: translateY(0vh) rotate(160deg);
-            transform: translateY(0vh) rotate(160deg);
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
-  }
-  to {
-    -webkit-transform: translateY(0vh) rotate(10deg);
-            transform: translateY(0vh) rotate(10deg);
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
   }
@@ -364,33 +346,93 @@
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
   }
-  15% {
+  30% {
     -webkit-transform: translateY(0vh) rotate(0deg);
             transform: translateY(0vh) rotate(0deg);
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
   }
-  35% {
+  100% {
     -webkit-transform: translateY(0vh) rotate(160deg);
             transform: translateY(0vh) rotate(160deg);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+}
+
+@-webkit-keyframes swing {
+  from {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  15% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  35% {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
   }
   55% {
-    -webkit-transform: translateY(0vh) rotate(10deg);
-            transform: translateY(0vh) rotate(10deg);
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
   }
   75% {
-    -webkit-transform: translateY(0vh) rotate(160deg);
-            transform: translateY(0vh) rotate(160deg);
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
   }
   to {
-    -webkit-transform: translateY(0vh) rotate(10deg);
-            transform: translateY(0vh) rotate(10deg);
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes swing {
+  from {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  15% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  35% {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  55% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  75% {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+  }
+  to {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
   }
