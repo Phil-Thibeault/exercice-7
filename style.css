@@ -28,12 +28,13 @@
     align-items: center;
     justify-content: center;
     margin: 0;
-    background-color: #03312E;
-    height: 20vh;
+    background-image: url("header.jpg");
+    background-size: cover;
+    height: 100vh;
 }
 
 .site-branding .site-description {
-	color: #009F93;
+	color: #000;
 }
 
 .site-branding > .site-title{
@@ -44,7 +45,7 @@
 }
 
 .site-branding > .site-title > a {
-    color: #02C3BD;
+    color: #000;
 }
 
 .entry-content{
@@ -52,7 +53,7 @@
 }
 
 .site-content{
-    margin-top: 25vh;
+    margin-top: 100vh;
     background-color: #FFF;
 }
 
